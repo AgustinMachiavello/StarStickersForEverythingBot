@@ -1,7 +1,7 @@
 # StarStickersForEverythingBot
 ## Description
 **Coded for Python 3.6**
-#### Based on StarStcikersForEverything <3: https://www.facebook.com/StarStickersforEverything/
+#### Based on StarStickersForEverything <3: https://www.facebook.com/StarStickersforEverything/
 This python script gets the latest comments from the subreddit r/toastme and generates a phrase with the same kind of writting or style of the comments using **Markov chains**.  Then it crops the text into an star template image and posts it to Facebook! 
 **There is nothing too complitaced in this script, so any modifications should be easy to apply (owo)**
 ## Disclaimer
