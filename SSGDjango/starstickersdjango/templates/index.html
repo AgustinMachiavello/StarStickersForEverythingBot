@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Generate & Post{% endblock %}</title>
+</head>
+<body class="text-center">
+    <div>
+        <form class="form-signin" method="post">
+            <div>
+                <a href="{{ domain }}generator/generateandupload/">
+                    <img class="img-fluid" src="{{ domain }}static/SSGBannerNoBackgroung.png" alt="Responsive image">
+                </a>
+            </div>
+            <div class="container-small">
+                <h1 class="h3 mb-3 font-weight-normal">beep boop enter code</h1>
+                {% csrf_token %}
+                {{ secret_code_form.as_p }}
+            </div>
+            <div>
+                <button id="secret_code-btn" type="submit" name="secret_code-btn" class="btn btn-success btn-lg">Generate & Post (OwO)</button>
+            </div>
+            <div>
+                <a class="btn btn-link" href="{{ domain }}generator/generatecorpus/">Go to Corpus Generator</a>
+                <a class="btn btn-link" href="{{ domain }}static/corpus.txt">See corpus</a><br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock%}
